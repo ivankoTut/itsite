@@ -1,0 +1,63 @@
+@font-face {
+    font-family: GracefulMazurka; /* Гарнитура шрифта */
+    src: url(/font/GracefulMazurka.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: BLAZE; /* Гарнитура шрифта */
+    src: url(/font/BLAZE.TTF); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Fontocide; /* Гарнитура шрифта */
+    src: url(/font/Fontocide.ttf); /* Путь к файлу со шрифтом */
+}
+
+.m_top{
+    height:120px;
+    background: #902b2b;
+    border-color: #0c0d10;
+    border-width: 2px;
+    border-style: dashed;
+
+}
+
+
+.m_kub4{
+    background: rgba(138,128,250,0.38);
+    border-color: #0c0d10;
+    border-width: 2px;
+    border-style: dashed;
+    height: calc(100% / 3);
+    background-size:contain;
+}
+.m_kub4:hover{
+    background: #c7254e;
+}
+.m_kub4_row{
+    background-image:url(/img/bg.gif);
+    background-size: cover;
+    position: relative;
+    background-color: darkmagenta;
+    height: calc(100% - 120px - 140px);
+
+}
+.m_bottom_kub{
+    height:140px;
+    background: #0f74a8;
+    border-color: #0c0d10;
+    border-width: 2px;
+    border-style: dashed;
+}
+.m_bottom_rov{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+.crossrefaddb{
+    width: 25px;
+    height: 25px;
+}
+.imgdel{
+    width: 25px;
+    height: 25px;
+}
