@@ -94,5 +94,5 @@ Route::group(['prefix' =>'gallery'], function () {
 
 
 
-Route::get('/{kat}/{id}','noteController@url');
+Route::get('/{key}/{url}','noteController@url');
 

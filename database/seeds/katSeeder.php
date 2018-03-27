@@ -64,6 +64,8 @@ class katSeeder extends Seeder
 
             ]);
 
+        factory(App\Note::class,100)->create();
+
         /*
          *
          * DB::table('kategories')->insert([

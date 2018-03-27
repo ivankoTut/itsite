@@ -23,3 +23,15 @@ $factory->define(App\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+
+$factory->define(App\Note::class, function (Faker $faker) {
+    $category = \App\Kategory::all()->pluck('id')->toArray();
+
+    return [
+        'kat' => $category[array_rand($category)],
+        'url' => str_slug($faker->unique()->name),
+        'label' => $faker->name,
+        'text' => $faker->text()
+    ];
+});

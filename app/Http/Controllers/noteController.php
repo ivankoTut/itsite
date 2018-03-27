@@ -16,15 +16,9 @@ class noteController extends Controller
         $f=Note::find($id);
         return view('note.view',['f'=>$f]);
     }
-    public  function url($id)
+    public  function url(Kategory $key, Note $url)
     {
-        $f = Note::where('url','=',$id)->get()->first();
-        if(isset($f))
-        {
-            return view('note.view',['f'=>$f]);
-        }else{
-            return redirect('/');
-        }
+        return view('note.view',['f'=>$url]);
     }
     public function add(){
 

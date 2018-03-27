@@ -4,6 +4,21 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Auth;
+/**
+ * App\Settings
+ *
+ * @property int $id
+ * @property string $key
+ * @property string $name
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Settings whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Settings whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Settings whereKey($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Settings whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Settings whereUpdatedAt($value)
+ * @mixin \Eloquent
+ */
 class Settings extends Model
 {
 
